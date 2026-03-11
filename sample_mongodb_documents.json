@@ -1,0 +1,39 @@
+{
+    "Users": [
+        {
+            "_id": "ObjectId('65bc1a23f4a3e792...')",
+            "username": "admin",
+            "email": "admin@securevault.local",
+            "password": "$2a$10$hashedpasswordstring...",
+            "createdAt": "ISODate('2026-03-11T10:00:00Z')",
+            "updatedAt": "ISODate('2026-03-11T10:00:00Z')",
+            "__v": 0
+        }
+    ],
+    "Transactions": [
+        {
+            "_id": "ObjectId('65bc2b4a1...')",
+            "userId": "ObjectId('65bc1a23f4a3e792...')",
+            "type": "income",
+            "amount": 5000,
+            "category": "Salary",
+            "description": "Monthly Salary from Corp",
+            "createdAt": "ISODate('2026-03-11T10:05:00Z')",
+            "updatedAt": "ISODate('2026-03-11T10:05:00Z')",
+            "__v": 0
+        }
+    ],
+    "AuditLogs": [
+        {
+            "_id": "ObjectId('65bc3c9d2...')",
+            "userId": "ObjectId('65bc1a23f4a3e792...')",
+            "action": "CREATE_TRANSACTION",
+            "transactionId": "ObjectId('65bc2b4a1...')",
+            "amount": 5000,
+            "ipAddress": "192.168.1.100",
+            "createdAt": "ISODate('2026-03-11T10:05:01Z')",
+            "updatedAt": "ISODate('2026-03-11T10:05:01Z')",
+            "__v": 0
+        }
+    ]
+}

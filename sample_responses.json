@@ -1,0 +1,54 @@
+{
+    "POST /api/auth/login": {
+        "token": "eyJhbGciOi... (JWT token string)",
+        "user": {
+            "id": "65bc1a23f4a3e792...",
+            "username": "johndoe",
+            "email": "john@example.com"
+        }
+    },
+    "POST /api/transactions": {
+        "_id": "65bc1f8f9...",
+        "userId": "65bc1a23f4a3e792...",
+        "type": "expense",
+        "amount": 45.50,
+        "category": "Groceries",
+        "description": "Weekly grocery run",
+        "createdAt": "2026-03-11T12:00:00.000Z",
+        "updatedAt": "2026-03-11T12:00:00.000Z",
+        "__v": 0
+    },
+    "GET /api/transactions": [
+        {
+            "_id": "65bc1f8f9...",
+            "userId": "65bc1a23f4a3e792...",
+            "type": "expense",
+            "amount": 45.50,
+            "category": "Groceries",
+            "description": "Weekly grocery run",
+            "createdAt": "2026-03-11T12:00:00.000Z",
+            "updatedAt": "2026-03-11T12:00:00.000Z",
+            "__v": 0
+        }
+    ],
+    "DELETE /api/transactions/:id": {
+        "message": "Transaction removed"
+    },
+    "GET /api/logs": [
+        {
+            "_id": "65bc2a4e1...",
+            "userId": "65bc1a23f4a3e792...",
+            "action": "CREATE_TRANSACTION",
+            "transactionId": {
+                "_id": "65bc1f8f9...",
+                "description": "Weekly grocery run",
+                "category": "Groceries"
+            },
+            "amount": 45.50,
+            "ipAddress": "127.0.0.1",
+            "createdAt": "2026-03-11T12:00:01.000Z",
+            "updatedAt": "2026-03-11T12:00:01.000Z",
+            "__v": 0
+        }
+    ]
+}
