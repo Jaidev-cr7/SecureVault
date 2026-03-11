@@ -4,9 +4,9 @@ SecureVault is a full-stack MERN application designed with a focus on security a
 
 ## Features
 - **Secure Authentication**: JWT-based login and registration with bcrypt password hashing.
-- **Financial Dashboard**: Premium glassmorphism UI to track income, expenses, and net balance.
+- **Financial Dashboard**: Interactive UI displaying income, expenses, and current balance.
 - **Transaction Vault**: Securely add and delete transactions with access control.
-- **Audit Trails**: Every creation and deletion is automatically logged with timestamp, action type, amount impact, and source IP.
+- **Audit Logging**: Every transaction creation or deletion is recorded with timestamp, action type, amount, and source IP.
 
 ## Tech Stack
 - **Frontend**: React, Vite, Tailwind CSS, Lucide React, Axios
